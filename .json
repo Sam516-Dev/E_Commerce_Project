@@ -1,0 +1,88 @@
+{
+  "food": [
+    {
+      "id": 1,
+      "name": "Fresh Apples",
+      "price": 2.99,
+      "image": "apple.jpg",
+      "rating": 4.5,
+      "category": "Fruits"
+    },
+    {
+      "id": 2,
+      "name": "Organic Bananas",
+      "price": 1.99,
+      "image": "banana.jpg",
+      "rating": 4.0,
+      "category": "Fruits"
+    },
+    {
+      "id": 3,
+      "name": "Salmon Fillet",
+      "price": 12.99,
+      "image": "salmon.jpg",
+      "rating": 4.8,
+      "category": "Seafood"
+    },
+    {
+      "id": 4,
+      "name": "Greek Yogurt",
+      "price": 3.49,
+      "image": "yogurt.jpg",
+      "rating": 4.2,
+      "category": "Dairy"
+    }
+  ],
+  "shoes": [
+    {
+      "id": 5,
+      "name": "Running Shoes",
+      "price": 79.99,
+      "image": "runningshoes.jpg",
+      "rating": 4.7,
+      "category": "Athletic Shoes"
+    },
+    {
+      "id": 6,
+      "name": "Casual Sneakers",
+      "price": 49.99,
+      "image": "sneakers.jpg",
+      "rating": 4.3,
+      "category": "Casual Shoes"
+    },
+    {
+      "id": 7,
+      "name": "Formal Leather Shoes",
+      "price": 99.99,
+      "image": "leathershoes.jpg",
+      "rating": 4.6,
+      "category": "Formal Shoes"
+    }
+  ],
+  "groceries": [
+    {
+      "id": 8,
+      "name": "Pasta (1 lb)",
+      "price": 2.49,
+      "image": "pasta.jpg",
+      "rating": 4.1,
+      "category": "Pasta & Grains"
+    },
+    {
+      "id": 9,
+      "name": "Canned Soup",
+      "price": 1.99,
+      "image": "soup.jpg",
+      "rating": 3.9,
+      "category": "Canned Goods"
+    },
+    {
+      "id": 10,
+      "name": "Detergent",
+      "price": 5.99,
+      "image": "detergent.jpg",
+      "rating": 4.0,
+      "category": "Household"
+    }
+  ]
+}
