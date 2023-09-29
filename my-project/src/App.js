@@ -1,9 +1,12 @@
+import ConsumeAPI from "./Components/ConsumeAPI";
 
 function App() {
   return (
-    <div className="font-bold text-lg">
-     Hello Sam
+    <>
+    <div className="flex justify-center items-center">
+       <ConsumeAPI />
     </div>
+    </>
   );
 }
 
