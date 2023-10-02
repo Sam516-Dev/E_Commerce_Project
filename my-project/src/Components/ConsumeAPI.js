@@ -23,8 +23,7 @@ const ConsumeAPI = () => {
               </p>
             </div>
 
-            {/* <div className="flex"> bg-fuchsia-100
-            </div> */}
+          
             <div className="p-4 flex flex-col border-t border-blue-500 justify-between">
               {/* div here */}
               <div className="flex items-center justify-between">
