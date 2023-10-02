@@ -7,6 +7,7 @@ const Counter = () => {
   // Function to increment the count
   const incrementCount = () => {
     setCount(count + 1);
+    // console.log("Counter is:", count )
   };
 
   // Function to decrement the count

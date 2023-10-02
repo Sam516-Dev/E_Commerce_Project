@@ -9,6 +9,12 @@
 }
 
 
+.modal-open {
+  filter: blur(4px); /* You can adjust the blur amount as needed */
+}
+
+
+
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
