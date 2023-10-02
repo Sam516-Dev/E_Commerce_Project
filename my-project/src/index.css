@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* global.css */
+::selection {
+  background-color: #e01c9f; /* Red color from Tailwind CSS */
+  color: white;
+}
+
+
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
