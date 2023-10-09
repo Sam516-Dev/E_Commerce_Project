@@ -25,7 +25,7 @@ const ConsumeAPI = () => {
     <div className="container mx-auto py-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map((product) => (
-          <div key={product.id} className="bg-fuchsia-200 ...">
+          <div key={product.id} className="bg-fuchsia-200 rounded-md hover:bg-fuchsia-300 ...">
             <div className="flex flex-col p-1">
               <img
                 src={product.image}
