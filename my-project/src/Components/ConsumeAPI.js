@@ -4,7 +4,7 @@ import Counter from "./Counter";
 import Modal from "./Modal";
 import "../Styles/modalBlur.css";
 
-const ConsumeAPI = () => {
+const ConsumeAPI = (props) => {
   const [data, setData] = useState(productsData);
   const [selectedItem, setSelectedItem] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,7 +40,7 @@ const ConsumeAPI = () => {
               <div className="p-4 flex flex-col border-t border-blue-500 justify-between">
                 <div className="flex items-center justify-between">
                   <div className="flex">
-                    <Counter />
+                    <Counter product={product} />
                   </div>
                   <h3 className="flex text-xl font-bold mr-2">
                     ${product.price}

@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 
-const Counter = () => {
+const Counter = (props) => {
   // Initialize state for the count of items in the cart
+
+  const { product } = props;
+
   const [count, setCount] = useState(0);
+  const [price, setPrice] = useState(product)
 
   // Function to increment the count
   const incrementCount = () => {
     setCount(count + 1);
-    // console.log("Counter is:", count )
+     console.log("here are the products:", product.price )
   };
 
   // Function to decrement the count
