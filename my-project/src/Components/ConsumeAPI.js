@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import productsData from "../data/products2.json";
 import Counter from "./Counter";
 import Modal from "./Modal";
 import "../Styles/modalBlur.css";
 
-const ConsumeAPI = (props) => {
+const ConsumeAPI = () => {
   const [data, setData] = useState(productsData);
   const [selectedItem, setSelectedItem] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,20 +12,28 @@ const ConsumeAPI = (props) => {
   const handlePurchase = (product) => {
     setSelectedItem(product);
     setIsModalOpen(true);
-    console.log("seleted items are :", product);
-    console.log("is the modal open ? :", isModalOpen);
+    console.log("Selected item's price is:", product.price);
+    console.log("Is the modal open from ConsumeAPI component?", true);
   };
+
+  useEffect(() => {
+    console.log("isModalOpen is now from useEffect:", isModalOpen);
+  }, [isModalOpen]);
 
   const closeModal = () => {
     setSelectedItem(null);
     setIsModalOpen(false);
+    console.log("after closing modal :", isModalOpen);
   };
 
   return (
     <div className="container mx-auto py-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {data.map((product) => (
-          <div key={product.id} className="bg-fuchsia-200 rounded-md hover:bg-fuchsia-300 ...">
+          <div
+            key={product.id}
+            className="bg-fuchsia-200 rounded-md hover:bg-fuchsia-300 ..."
+          >
             <div className="flex flex-col p-1">
               <img
                 src={product.image}
@@ -57,8 +65,8 @@ const ConsumeAPI = (props) => {
           </div>
         ))}
       </div>
-      {isModalOpen && <div className="modal-overlay"></div>}{" "}
-      {/* Render the overlay */}
+
+      {isModalOpen && <div className="modal-overlay"></div>}
       <Modal
         isOpen={isModalOpen}
         closeModal={closeModal}

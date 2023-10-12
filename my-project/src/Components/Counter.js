@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 
 const Counter = (props) => {
-  // Initialize state for the count of items in the cart
-
-  const { product } = props;
+  const { selectedItem, isOpen, product } = props;
 
   const [count, setCount] = useState(0);
-  const [price, setPrice] = useState(product)
 
   // Function to increment the count
   const incrementCount = () => {
-    setCount(count + 1);
-     console.log("here are the products:", product.price )
+    if (!isOpen || selectedItem) {
+      console.log("Selected item price:", selectedItem.price);
+      console.log(isOpen)
+    } else if (product) {
+      console.log("Product price:", product.price);
+    }
   };
 
   // Function to decrement the count
@@ -38,7 +39,6 @@ const Counter = (props) => {
           +
         </button>
       </div>
-      {/* You can also display additional information like item name, price, etc. here */}
     </div>
   );
 };
