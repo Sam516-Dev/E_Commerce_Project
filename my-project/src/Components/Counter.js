@@ -1,25 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Counter = (props) => {
-  const { selectedItem, isOpen, product } = props;
-
+  const { selectedItem, isOpen } = props;
+// const [money, setMoney ] = useState(selectedItem.price)
   const [count, setCount] = useState(0);
+
+// const handleMoney = () =>{
+//   if(count>1){
+
+//   }
+// }
+
 
   // Function to increment the count
   const incrementCount = () => {
     if (!isOpen || selectedItem) {
-      console.log("Selected item price:", selectedItem.price);
-      console.log(isOpen)
-    } else if (product) {
-      console.log("Product price:", product.price);
+      setCount(count+1) 
+      console.log(" + clicked, plus", selectedItem);
+      console.log(" is it open when !Open ", isOpen);
     }
   };
 
   // Function to decrement the count
   const decrementCount = () => {
-    if (count > 0) {
-      setCount(count - 1);
-    }
+    // if (count > 0) {
+    setCount(count - 1);
+    console.log("clicked ...");
+    // }
   };
 
   return (
